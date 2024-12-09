@@ -4,24 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User - Management - Application</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./member.css">
+    <link rel="shortcut icon"
+        href="https://projects.souravlife.com/library/image/Sourav%20Roy%20Favicon%20Red%20Logo.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="https://kit.fontawesome.com/90fd2fc1ed.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
     <nav>
         <div>
-            <img src="https://projects.souravlife.com/library/image/Sourav%20Roy%20White%20Red%20Logo.png" alt="" />
+            <a href="./index.html"><img
+                    src="https://projects.souravlife.com/library/image/Sourav%20Roy%20White%20Red%20Logo.png"
+                    alt="" /></a>
         </div>
-        <div>
+        <div id="searchBox">
+            <input type="search" name="search" id="search">
+            <i class="fa-solid fa-magnifying-glass" style="color: #333;"></i>
+        </div>
+        <div id="second">
             <ul>
                 <li>
                     <a href="./index.html">Home</a>
                 </li>
                 <li>
                     <a href="./member.html">Members</a>
-                <!-- </li>
+                    <!-- </li>
                 <li>
                     <a href="#">About</a>
                 </li>
@@ -32,6 +44,15 @@
             <button>Toggle</button> -->
         </div>
     </nav>
+    <div id="sortingDiv">
+        <select name="sorting" id="sort">
+            <option value="" selected disabled>Select a option to sort</option>
+            <option value="asca">Ascending by Age </option>
+            <option value="desca">Descending by Age</option>
+            <option value="ascn">Ascending by Name </option>
+            <option value="descn">Descending by Name</option>
+        </select>
+    </div>
     <div id="main">
 
     </div>
@@ -40,5 +61,6 @@
         <button id="next">Next</button>
     </div>
 </body>
-<script src="./index.js"></script>
+<script src="./member.js"></script>
+
 </html>

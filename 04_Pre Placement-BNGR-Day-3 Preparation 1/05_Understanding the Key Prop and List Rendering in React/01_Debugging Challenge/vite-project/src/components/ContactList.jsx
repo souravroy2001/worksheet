@@ -64,7 +64,7 @@ function ContactList() {
       {/* Render the contact list */}
       <ul>
         {contacts.map((contact) => (
-          <div key={contact.id}>
+          <div>
             <li key={contact.id}>
               {contact.name} - {contact.email}
             </li>

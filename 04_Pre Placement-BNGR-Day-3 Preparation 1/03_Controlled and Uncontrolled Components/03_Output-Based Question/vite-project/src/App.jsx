@@ -6,7 +6,8 @@ function App() {
     username: "",
     email: "",
   });
-let ref = useRef(null)
+
+  let ref = useRef(null);
 
   function handelChange(event) {
     let { name, value } = event.target;
@@ -15,7 +16,7 @@ let ref = useRef(null)
 
   function handelSubmit(event) {
     event.preventDefault();
-    console.log(ref.current.email.value)
+    console.log(ref.current.email.value);
     console.log(userData);
   }
 
